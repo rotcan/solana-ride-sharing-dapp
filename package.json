@@ -1,0 +1,85 @@
+{
+  "name": "cab_agg_3",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.4.8",
+    "@babel/core": "^7.15.0",
+    "@project-serum/sol-wallet-adapter": "^0.2.0",
+    "@solana/web3.js": "^1.11.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "arweave": "^1.10.14",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "borsh": "^0.4.0",
+    "buffer": "^6.0.3",
+    "buffer-layout": "^1.2.2",
+    "cors": "^2.8.5",
+    "date-fns": "^2.21.3",
+    "eventemitter3": "^4.0.7",
+    "express": "^4.17.1",
+    "fast-json-stringify": "^2.7.3",
+    "google-map-react": "^2.1.10",
+    "google-maps-react": "^2.0.6",
+    "graphql": "^15.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.13.0",
+    "react-modal": "^3.13.1",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.3.5",
+    "web-vitals": "^1.1.2"
+  },
+  "proxy": "http://localhost:3002",
+  "scripts": {
+    "server": "node server/index.js",
+    "start": "set PORT=3001 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:program": "cargo build-bpf --manifest-path=./program/Cargo.toml --bpf-out-dir=dist/program",
+    "test:program": "cargo test-bpf --manifest-path=./program/Cargo.toml"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/date-fns": "^2.6.0",
+    "@types/google-map-react": "^2.1.2",
+    "@types/google-maps-react": "^2.0.5",
+    "@types/google.maps": "^3.45.6",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^15.0.3",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-modal": "^3.12.0",
+    "@types/styled-components": "^5.1.13",
+    "sass": "^1.38.2",
+    "testweave-sdk": "^0.2.2"
+  }
+}
